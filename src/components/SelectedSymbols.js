@@ -1,7 +1,7 @@
-const SelectedSymbols = ({ symbols, onChange }) => {
+const SelectedSymbols = ({symbols, onChange}) => {
     const renderSymbol = symbol => {
         return (
-            <div key={`selected-symbol-${symbol}`}>
+            <div key={`selected-symbol-${symbol}`} className={"symbol-selected"}>
                 {symbol}
                 <button onClick={() => handleRemoveSymbol(symbol)}>x</button>
             </div>
@@ -14,7 +14,7 @@ const SelectedSymbols = ({ symbols, onChange }) => {
         onChange(newSymbols);
     };
 
-    return symbols.map(renderSymbol);
+    return (<div className={"selected-symbols"}>{symbols.map(renderSymbol)}</div>);
 };
 
 export default SelectedSymbols;

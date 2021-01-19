@@ -1,0 +1,51 @@
+.App {
+    width: 800px;
+    margin: 40px auto;
+}
+
+.App section {
+    margin: 10px 0;
+}
+
+.symbol-selector {
+    padding: 10px;
+    width: 100%;
+}
+
+.selected-symbols {
+    display: flex;
+    flex-direction: row;
+}
+
+.symbol-selected {
+    margin-right: 10px;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.symbol-selected button {
+    margin-left: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.date-selector {
+    display: flex;
+    flex-direction: row;
+}
+
+.date-select {
+    margin-right: 10px;
+}
+
+.no-symbols {
+    margin: 40px;
+    font-size: 2em;
+    color: grey;
+    text-align: center;
+}
+
+.chart-subset-select {
+    display: flex;
+    margin-left: auto;
+}

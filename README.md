@@ -1,3 +1,13 @@
+# Notes from Tomas
+Hi! 
+* It is standard CRA application so you should be able to run it by installing packages and `yarn start`.
+* For the sake of time I have taken a lot of shortcuts throughout the app especially in error handling, data validation and styling. 
+* I have added couple of simple tests just for the show, but was concentrating on the functionality.
+* Chart is basic but should serve the purpose. There seems to be known issue with datepicker and its render position, but once again I have taken shortcuts to deliver this in timely manner.
+* The list of symbols endpoint returns huge amount of data, about 4mb of symbols. For the purpose of testing (and to cut a shortcut) I created local sublist of symbols. If you wish to load all symbols, uncomment the piece of code in `conectors.js/getStockSymbol` 
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
