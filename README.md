@@ -1,10 +1,15 @@
 # Notes from Tomas
 Hi! 
+* You should add Finnhub api key to your `.env.local` file. 
+
+```echo 'REACT_APP_FINNHUB_API_KEY=token' > .env.local```
+
+ 
 * It is standard CRA application so you should be able to run it by installing packages and `yarn start`.
 * For the sake of time I have taken a lot of shortcuts throughout the app especially in error handling, data validation and styling. 
 * I have added couple of simple tests just for the show, but was concentrating on the functionality.
-* Chart is basic but should serve the purpose. There seems to be known issue with datepicker and its render position, but once again I have taken shortcuts to deliver this in timely manner.
-* The list of symbols endpoint returns huge amount of data, about 4mb of symbols. For the purpose of testing (and to cut a shortcut) I created local sublist of symbols. If you wish to load all symbols, uncomment the piece of code in `conectors.js/getStockSymbol` 
+* Chart is basic but should serve the purpose. There is an issue with rendering axis labels. I could have fixed it by adding another library and more components. I didnt like that approach and didnt want to spend limited time on solving it.
+* The list of symbols endpoint returns huge amount of data, about 4mb of symbols. For the purpose of this test I created local sublist of symbols. If you wish to load all symbols, uncomment the piece of code in `conectors.js/getStockSymbol` 
 
 ---
 
